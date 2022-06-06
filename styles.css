@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: whitesmoke;
     font-family: "Lato", sans-serif;
@@ -27,9 +31,7 @@ header img{
 
 .navbar{
     line-height: 2rem;
-    height: 35px;
-    
-    
+    height: 35px; 
 }
 
 nav{
@@ -124,13 +126,17 @@ section{
     /* align-items: center; */   
     background-color: #fff;
     line-height: 1.8rem;
+    
 }
 
 .heading{
     font-size: 2.5rem;
     font-weight: 500;
-    
     color: #3b3b67;
+
+    margin-top: 6rem;
+    line-height: 3.5rem;
+    
 }
 
 .main-img{
@@ -215,29 +221,36 @@ table{
     align-self: flex-start;
 }
 
+.navbar-btn-end{
+    border: none;
+    color: white;
+    background-color: rgb(249, 146, 50);
+    display: inline-block;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    width: 50%;
+}
+
 .youtube{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
 }
 
 .sidebar{
-    position: fixed;
+    position: fixed;  
     left: 2rem;
     top: 3rem;
-
-    margin-top: 4rem;
-
+     margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    
-
-    height: fit-content;
+     height: fit-content;
     width: 16%;
     padding: 1rem;
-    
-   
     /*margin-right: 100px; */
     border-radius: 10px;
     /*width: 200px; */
@@ -249,6 +262,7 @@ table{
     /*top: 70px; ****/
     /* padding: 10px; */
     z-index: 10;
+    scroll-padding: 50px;
 }
 
 .side-h3{
@@ -280,134 +294,101 @@ table{
 
 /*********************************    FOOTER     ****************************/
 
-.footer{
+/*.footer{
     display: fixed;
     z-index: 1000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.header{
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    padding: 5rem;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
-    width: 100%;
-    justify-content: space-between;
-}
-
-.nav-list{
-    display: flex;
-    gap: 2.4rem;
-    align-items: center;
-    font-size: 1rem;
-}
-.nav-list,
-li,
-  a {
-    list-style-type: none;
-    text-decoration: none;
-    color: rgb(89, 89, 89);
-    font-weight: 600;
-}
-
-.right-part{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-
-.search-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
 } */
 
+/*.ftr{
+    position: absolute;
+    top: 0;
+    z-index:1001;
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: yellow;
+  } */
 
 
 
-/* .search-box{
-    border: 0rem;
+
+  /********************************************* MEDIA QURIES ********************************************/
+
+@media (max-width: 38em) {
+    html{
+        font-size: 90%;
+    }  
+
+    body{
+        padding-left: 0%;
+    }
+    
+    header{
+        position: relative;
+    }
+
+    .heading{
+        margin-top: 0%;
+    }     
+
+    section{
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    section img{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 3rem;
+        align-self: center;
+    }
+
+    header{
+        padding-left: 2rem;
+    }
+
+    .ham-icon{
+        height: 25px;
+        padding-left: 7rem;
+    }
+
+    .mongodb-features-img{
+        width: 100%;
+    }
+
+    .sql-sever-img{
+        width: 100%;
+    }
+
+    .sql-features{
+        width: 100%;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .main-table td{
+        padding: 0;
+    }
+
+    .youtube{
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-btn-end{
+        font-size: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .nav-list{
+        display: none;
+    }
 }
- */
