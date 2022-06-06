@@ -482,7 +482,7 @@ table{
 
 /************************************/
 
- @media (max-width: 720px){
+/* @media (max-width: 720px){
     .sidebar{
         display: none;
     }
@@ -495,4 +495,4 @@ table{
         display: flex;
         width: 100%;
     }
-} 
+}            */
